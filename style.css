@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%)) ;
+    background-repeat: no-repeat;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    margin: auto;
+    height: 500px;
+    width: 70vw;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+h1{
+    margin-bottom: 190px;
+}
+
+.illustration-desktop{
+    height: 100%;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.box{
+    position: absolute;
+    left: 8.5%;
+    bottom: 31%;
+    z-index: 1;
+}
+.woman{
+    position: absolute;
+    top: 13%;
+    right: 21.8%;
+}
+.pattern{
+    position: absolute;
+    top: -57%;
+    right: 18%;
+}
+.faq{
+    color:hsl(238, 29%, 16%);
+    width: 45%;
+    margin-right: 70px;
+}
+.question{
+    height: 50px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    padding-right: 10px;
+    cursor: pointer;
+}
+.question:hover{
+    color: hsl(14, 88%, 65%);
+}
+.question img{
+    height: 6px;
+}
+.answer{
+    display: none;
+    color: hsl(240, 6%, 50%);
+    font-size: 14px;
+}
+@media (min-width:1435px) {
+    .illustration-mobile{
+        display: none;
+    }
+}
+@media (max-width:1435px) {
+    body{
+        height: 125vh;
+    }
+    .illustration-desktop{
+        display: none;
+    }
+    .box{
+        display: none;
+    }
+    .illustration-mobile{
+        width: 300px;
+        height: 100px;
+        position: relative;
+        overflow: visible;
+    }
+    .mob-pattern{
+        position: absolute;
+        width: 200px;
+        top: 0%;
+        left: 17%;
+    }
+    .mob-woman{
+        width: 200px;
+        position: absolute;
+        top: -90%;
+        right: 17%;
+        z-index: 50;
+    }
+    .container{
+        width: 90%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
+    }
+    .faq{
+        margin-bottom:40px ;
+        margin-right:0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        padding-left:15px ;
+        padding-right: 15px;
+    }
+    .question{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
